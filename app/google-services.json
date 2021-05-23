@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "988785248831",
+    "project_id": "suiviemploye",
+    "storage_bucket": "suiviemploye.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:988785248831:android:175ac5a6c7020069b0068a",
+        "android_client_info": {
+          "package_name": "com.example.suiviemployer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "988785248831-og64vgugg2o7lho8ub63obb5msfjgjd0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAR_snroCWv0540EcjA2qsAzK1fqckU0zk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "988785248831-og64vgugg2o7lho8ub63obb5msfjgjd0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

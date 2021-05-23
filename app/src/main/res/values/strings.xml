@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">suiviEmployer</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="phone">Phone</string>
+    <string name="authentication">authentication Menu</string>
+</resources>

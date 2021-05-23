@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/radius">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:ignore="MissingClass">
+
+
+            <TextView
+                android:id="@+id/misssionName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Name Mission"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/deleteMission"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:maxWidth="5dp"
+                    android:maxHeight="0dp"
+                    android:text="Ajouter"
+                    android:src="@drawable/deletee"
+                    app:backgroundTint="#FD0000"
+                    app:maxImageSize="17dp"
+                    android:onClick="deletemission"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/missionDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="0dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
+            android:text="TextView TextViewTextViewTextViewTextView TextViewTextView TextView TextViewvv TextView TextView" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dateDebut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="5dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/add_fabb"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="end"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:src="@drawable/editeee"
+                    android:onClick="addmission"
+                    android:textColor="@color/white"
+                    app:backgroundTint="#118115"
+                    app:collapsedSize="45dp"
+                    app:icon="@drawable/ic_edite"
+                    app:iconSize="18dp"
+                    app:iconTint="@color/white"
+                    app:rippleColor="#B15959" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/dateFin"
+                android:gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

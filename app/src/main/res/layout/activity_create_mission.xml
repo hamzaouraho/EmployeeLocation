@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".createMission">
+
+    <TextView
+        android:id="@+id/mission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:text="Add new Mission"
+        android:textColor="#F6FBFB"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/missionname"
+        android:layout_width="265dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="Mission Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:scrollbarThumbVertical="@color/design_default_color_primary_variant"
+        android:shadowColor="#FFFFFF"
+        android:textColor="#F6F5F5"
+        android:textColorHighlight="#80CBC4"
+        android:textColorHint="#8FFFFFFF"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/mission"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/mission"
+        app:layout_constraintTop_toBottomOf="@+id/mission" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:hint="Date Debut"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#80CBC4"
+        android:textColorHint="#80CBC4"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/missionname"
+        app:layout_constraintStart_toStartOf="@+id/missionname"
+        app:layout_constraintTop_toBottomOf="@+id/missionname"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/datefin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:hint="Date Fin"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#80CBC4"
+        android:textColorHint="#80CBC4"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvDate"
+        app:layout_constraintStart_toStartOf="@+id/tvDate"
+        app:layout_constraintTop_toBottomOf="@+id/tvDate"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:gravity="start|top"
+        android:hint="Mission Description"
+        android:inputType="textMultiLine"
+        android:paddingLeft="18dp"
+        android:paddingBottom="19dp"
+        android:shadowColor="#FFFFFF"
+        android:textColor="#F6F5F5"
+        android:textColorHighlight="#80CBC4"
+        android:textColorHint="#8FFFFFFF"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/datefin"
+        app:layout_constraintStart_toStartOf="@+id/datefin"
+        app:layout_constraintTop_toBottomOf="@+id/datefin" />
+
+    <!--<Button
+        android:id="@+id/savemission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:backgroundTint="#812196F3"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextMultiLine"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextMultiLine"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />-->
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/savemission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text=" Save Mission "
+        android:textColor="@color/white"
+        app:backgroundTint="#118115"
+        app:iconTint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextMultiLine"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextMultiLine"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine"
+        app:rippleColor="#B15959" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
